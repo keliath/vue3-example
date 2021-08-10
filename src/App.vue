@@ -1,15 +1,21 @@
 <template>
   <div>
     <h1>Rick and Morty</h1>
+    <filter-by-status />
+    <filter-by-name />
     <list-characters />
   </div>
 </template>
 
 <script>
 import ListCharacters from "@/components/ListCharacters";
+import FilterByStatus from "@/components/FilterByStatus";
+import FilterByName from "@/components/FilterByName";
 export default {
   name: "App",
   components: {
+    FilterByStatus,
+    FilterByName,
     ListCharacters,
   },
 };

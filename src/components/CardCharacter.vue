@@ -9,12 +9,12 @@
             character.status === 'Alive'
               ? 'alive'
               : character.status === 'Dead'
-              ? 'deade'
+              ? 'dead'
               : 'default'
           "
         >
         </span>
-        <span>{{ character.status }} -- {{ character.specie }}</span>
+        <span>{{ character.status }}-{{ character.specie }}</span>
       </div>
       <div class="origin">
         <span> Origin: {{ character.origin.name }} </span>
